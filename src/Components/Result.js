@@ -29,11 +29,7 @@ const Result = () => {
     // getdata()
     
     }
-   const handleKeyPress = (event) => {
-      if(event.key === 'Enter'){
-        alert('enter press here! ')
-      }
-    }
+  
 
 switch (location.pathname) {
   case '/search':
@@ -52,7 +48,7 @@ switch (location.pathname) {
           
           // if (e.keyCode === ENTER_KEY_CODE)
           
-        }} onKeyPress={handleKeyPress} type="text"className='bg-white w-[600px] text-black  rounded-full outline-none focus:outline:none text-2xl p-2    'placeholder='Search' name="" id="" />
+        }}  type="text"className='bg-white w-[600px] text-black  rounded-full outline-none focus:outline:none text-2xl p-2    'placeholder='Search' name="" id="" />
         <img className='text-4xl  h-12 p-1 rounded-full' onClick={getdata} src={google} alt="" />
     </div>
           {/* {data?data.map((items,ind)=>{
